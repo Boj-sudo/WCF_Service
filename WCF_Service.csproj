@@ -73,6 +73,7 @@
     <Compile Include="BackEnd.svc.cs">
       <DependentUpon>BackEnd.svc</DependentUpon>
     </Compile>
+    <Compile Include="CartItems.cs" />
     <Compile Include="IBackEnd.cs" />
     <Compile Include="Kota.designer.cs">
       <AutoGen>True</AutoGen>
