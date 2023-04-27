@@ -12,7 +12,7 @@ namespace WCF_Service
     public class BackEnd : IBackEnd
     {
         KotaDataContext db = new KotaDataContext();
-
+        static List<CartItems> cartitems = new List<CartItems>();
         public User GetUser(string email)
         {
             var find_user = (from u in db.userTables
@@ -393,6 +393,33 @@ namespace WCF_Service
             else
             {
                 return null;
+            }
+        }
+
+        public bool addtocart(String ID, int quantity)
+        {
+            CartItems cart = new CartItems
+            {
+                p_code = Convert.ToInt32(ID),
+                Quantity = quantity
+            };
+
+            cartitems.Add(cart);
+
+            return true;
+        }
+
+        public bool exitstoCart(string id)
+        {
+            dynamic cart = (from b in db.Carts where b.p_code.Equals(id) select b).FirstOrDefault();
+
+            if (cart != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
