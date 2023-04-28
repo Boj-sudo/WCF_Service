@@ -25,16 +25,4 @@
       <Column Name="userActive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="dbo.Cart" Member="Carts">
-    <Type Name="Cart">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Code" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
-      <Column Name="Description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
-      <Column Name="Image" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Total" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
 </Database>
