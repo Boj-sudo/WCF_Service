@@ -8,10 +8,10 @@
         <elementListCompartment Id="d24cb8d6-83c5-4bb5-8af8-e8c648caaee6" absoluteBounds="5.015, 1.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="48572b09-9a88-4222-b7f5-d87e6d3e210e" absoluteBounds="0.5, 0.875, 2, 2.3478011067708335">
+    <classShape Id="7c20ebf4-13f6-421f-9196-3fbbfb41f2cd" absoluteBounds="2.5, 0.875, 2, 2.3478011067708335">
       <DataClassMoniker Name="/KotaDataContext/userTable" />
       <nestedChildShapes>
-        <elementListCompartment Id="1dc9105e-351e-49a4-937c-db0e13c37b4d" absoluteBounds="0.51500000000000012, 1.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="dcac0244-c7a6-43ac-96ec-ba498ce82599" absoluteBounds="2.515, 1.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
