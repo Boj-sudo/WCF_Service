@@ -7,7 +7,7 @@ namespace WCF_Service
 {
     public class CartItems
     {
-        public int Id;
+        public int ID;
         public int Quantity;
     }
 }

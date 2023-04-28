@@ -401,7 +401,7 @@ namespace WCF_Service
         {
             var item = new CartItems
             {
-                Id = Convert.ToInt32(cart.Id),
+                ID = Convert.ToInt32(cart.ID),
                 Quantity = cart.Quantity
             };
 
@@ -417,7 +417,7 @@ namespace WCF_Service
         public bool isCartExist(string ID)
         {
             dynamic cart = (from p in cart_items
-                            where p.Id.Equals(ID)
+                            where p.ID.Equals(ID)
                             select p).FirstOrDefault();
 
             if (cart != null)
