@@ -400,7 +400,7 @@ namespace WCF_Service
         {
             CartItems cart = new CartItems
             {
-                p_code = Convert.ToInt32(ID),
+                Code = Convert.ToInt32(ID),
                 Quantity = quantity
             };
 
