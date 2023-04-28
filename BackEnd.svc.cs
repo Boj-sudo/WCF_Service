@@ -411,7 +411,7 @@ namespace WCF_Service
 
         public bool exitstoCart(string id)
         {
-            dynamic cart = (from b in db.Carts where b.p_code.Equals(id) select b).FirstOrDefault();
+            dynamic cart = (from b in db.Carts where b.Code.Equals(id) select b).FirstOrDefault();
 
             if (cart != null)
             {
