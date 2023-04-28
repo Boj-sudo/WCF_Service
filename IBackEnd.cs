@@ -74,9 +74,15 @@ namespace WCF_Service
         productTable AboutProduct(string id);
 
         [OperationContract]
-        bool addtocart(string ID, int quantity);
+        bool addToCart(CartItems cart);
 
         [OperationContract]
-        bool exitstoCart(string id);
+        List<CartItems> getCartItems();
+
+        [OperationContract]
+        bool isCartExist(string ID);
+
+        [OperationContract]
+        void clearCart();
     }
 }
